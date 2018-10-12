@@ -11,19 +11,36 @@ header {
   display: flex;
 }
 
-nav {
-  display: inline-block;
-}
-
 .nav-left {
-  width: 83%;
-  padding-top: 70px;
+  padding-top: 5%;
+  flex: 4;
 }
 
 nav a {
   margin: 3%;
   color: #999999;
   text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+  .nav-left {
+    flex: 3;
+    padding: 4%;
+  }
+  nav a {
+    margin: 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-left {
+    flex: 2;
+    padding: 3%;
+  }
+  nav a {
+    margin: 1%;
+    display: block;
+  }
 }
 
 .blue-icon {
@@ -46,7 +63,7 @@ nav a {
 .nav-right {
   text-align: center;
   margin-top: .5%;
-  width: 15%;
+  flex: 1;
 }
 
 .nav-right a {
@@ -54,8 +71,8 @@ nav a {
 }
 
 .logo {
-  width: 100%;
-  display: block;
+  width: 60%;
+  align-items: center;
   filter: invert(1);
 }
 
@@ -73,7 +90,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /*padding: 1%*/
 }
 
 .card {
@@ -86,9 +102,35 @@ section {
   box-shadow: 0 0 5px grey;
 }
 
+@media (max-width: 1440px) and (orientation: portrait) {
+  section {
+    justify-content: center;
+  }
+  .card {
+    width: 98%;
+  }
+}
+
+@media (max-width: 1080px) and (orientation: landscape) {
+  section {
+    justify-content: space-around;
+  }
+  .card {
+    width: 32%;
+    margin: 0 .5% 1.5% .5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-left {
+    flex: 1;
+  }
+  .card {
+    width: 98%;
+  }
+}
+
 .card-picture {
-  /*background: url("images/women2.jpg") no-repeat;*/
-  /*background-size: cover;*/
   flex: 2;
   position: relative;
 }
@@ -135,12 +177,7 @@ section {
   font-size: .8rem;
 }
 
-span {
-  /*display: block;*/
-}
-
 .info-quarter {
-  /*margin: 5% auto;*/
   width: 100%;
   margin-bottom: 5%;
 }
@@ -156,8 +193,6 @@ span {
   width: 98%;
   margin: 0 auto 5%;
   align-items: center;
-  /*margin: 1%;*/
-  /*padding: 2%;*/
 }
 
 .url p {
