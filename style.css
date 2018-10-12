@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2B2B2B;
+}
+
+nav a {
+  color: #999999;
+  text-decoration: none;
+}
+
+main {
+  background-color: #EFEFEF;
+  padding: 1%;
+}
+
+h1 {
+  /*margin: 1%;*/
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*padding: 1%*/
+}
+
+.card {
+  background-color: #FFFFFF;
+  color: #4D4D4D;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 24%;
+  margin-bottom: 1.5%;
+}
+
+.card-picture {
+  /*background: url("images/women2.jpg") no-repeat;*/
+  /*background-size: cover;*/
+  flex: 2;
+  position: relative;
+}
+
+.profile-pic {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 0;
+}
+
+.views {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-info {
+  padding: 5%;
+  flex: 3;
+}
+
+span {
+  display: block;
+}
+
+.info-quarter {
+  margin: 5% auto;
+}
+
+.name {
+  flex: 1;
+}
+
+.url {
+  background-color: #EFEFEF;
+  flex: 1;
+  overflow-wrap: break-word;
+}
+
+.playlist {
+  flex: 1;
+}
+
+.attachments {
+  flex: 1;
+}
