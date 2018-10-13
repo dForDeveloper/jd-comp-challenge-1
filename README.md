@@ -1,56 +1,15 @@
-@media (max-width: 1440px) and (orientation: portrait) {
-  * {
-    font-size: 1.5rem;
-  }
-  .nav-left {
-    padding-top: 2.5%;
-    flex: 1;
-  }
-  nav a {
-    margin: 0;
-    display: block;
-  }
-  section {
-    justify-content: center;
-  }
-  .card {
-    width: 98%;
-  }
-}
+# Static Comp Challenge 1
+The goal of this project was to recreate a static comp using HTML and CSS but without using `grid`. No assets were provided. The site was required to be responsive from 1440px to 320px browser widths and required to look the same on Firefox, Safari, and Chrome.
 
-@media (max-width: 1080px) and (orientation: landscape) {
-  .nav-left {
-    flex: 3;
-    padding: 4%;
-  }
-  nav a {
-    margin: 1%;
-  }
-}
+Original image:
+![screenshot of original static-comp](images/original-static-comp.jpg)
 
-@media (max-width: 768px) and (orientation: landscape) {
-  .nav-left {
-    flex: 2;
-    padding: 3%;
-  }
-  nav a {
-    margin: 1%;
-    display: block;
-  }
-  section {
-    justify-content: space-around;
-  }
-  .card {
-    width: 32%;
-    margin: 0 .5% 1.5% .5%;
-  }
-}
+My version:
+![screenshot of my dog party](images/screenshot.png)
 
-@media (max-width: 480px) {
-  .nav-left {
-    flex: 1;
-  }
-  .card {
-    width: 98%;
-  }
-}
+## Built With
+* HTML
+* CSS
+
+## Creator
+* Jeo D
