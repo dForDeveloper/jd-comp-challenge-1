@@ -5,7 +5,7 @@ Original image:
 ![screenshot of original static-comp](images/original-static-comp.jpg)
 
 My version:
-![screenshot of my dog party](images/screenshot.png)
+![screenshot of my recreation](images/screenshot.png)
 
 ## Built With
 * HTML
