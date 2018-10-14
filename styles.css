@@ -112,7 +112,7 @@ section {
 }
 
 .card-picture {
-  height: calc(100% / 3);
+  height: 40%;
   position: relative;
 }
 
@@ -155,7 +155,7 @@ section {
 
 .card-info {
   display: flex;
-  height: calc(200% / 3);
+  height: 60%;
   flex-direction: column;
   padding: 5% 5% 0 5%;
 }
