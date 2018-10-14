@@ -3,7 +3,10 @@
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
+}
 
+body {
+  height: 200vh;
 }
 
 header {
@@ -11,6 +14,7 @@ header {
   display: flex;
 }
 
+/*NAV LEFT*/
 .nav-left {
   flex: 4;
   margin-right: auto;
@@ -18,64 +22,24 @@ header {
 }
 
 nav a {
-  color: #999999;
   margin: 2%;
   text-decoration: none;
-}
-
-@media (max-width: 1440px) and (orientation: portrait) {
-  .nav-left {
-    flex: 1;
-    margin-left: 2%;
-    padding-top: 5%;
-  }
-  nav a {
-    display: block;
-    margin: 0;
-  }
-}
-
-@media (max-width: 1080px) and (orientation: landscape) {
-  .nav-left {
-    flex: 3;
-  }
-  nav a {
-    margin: 1%;
-  }
-}
-
-@media (max-width: 768px) and (orientation: landscape) {
-  .nav-left {
-    flex: 2;
-    padding: 3%;
-  }
-  nav a {
-    display: block;
-    margin: 1%;
-  }
-}
-
-.fas, .far {
-  margin-right: 1%
 }
 
 .blue-icon {
   color: #27B5FF;
 }
 
-.fa-user-circle {
+.nav-link {
   color: #999999;
-  font-size: 1.5rem;
+  margin-left: 1%;
 }
 
-.fa-caret-down {
-  font-size: 1.5rem;
-}
-
-.shares-link {
+.nav-link:hover {
   color: #FFFFFF;
 }
 
+/*NAV RIGHT*/
 .nav-right {
   flex: 1;
   margin-top: .5%;
@@ -84,16 +48,29 @@ nav a {
 
 .nav-right p a {
   align-items: center;
+  color: #27B5FF;
   display: flex;
   justify-content: center;
+}
+
+.nav-right-icon {
+  font-size: 1.5rem;
+}
+
+.fa-user-circle {
+  color: #999999;
 }
 
 .admin-username {
   margin: 0 3%;
 }
 
-.nav-right a {
-  color: #27B5FF;
+.admin-username:hover {
+  color: #FFFFFF;
+}
+
+.small-font {
+  font-size: .8rem;
 }
 
 .logo {
@@ -101,8 +78,10 @@ nav a {
   width: 60%;
 }
 
+/*MAIN*/
 main {
   background-color: #EFEFEF;
+  height: 100%;
   padding: 1%;
 }
 
@@ -117,6 +96,7 @@ section {
   justify-content: space-between;
 }
 
+/*CARD*/
 .card {
   background-color: #FFFFFF;
   box-shadow: 0 0 5px grey;
@@ -127,51 +107,33 @@ section {
   width: 24%;
 }
 
-@media (max-width: 1440px) and (orientation: portrait) {
-  section {
-    justify-content: center;
-  }
-  .card {
-    width: 98%;
-  }
-}
-
-@media (max-width: 1080px) and (orientation: landscape) {
-  section {
-    justify-content: space-around;
-  }
-  .card {
-    width: 32%;
-    margin: 0 .5% 1.5% .5%;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-left {
-    flex: 1;
-  }
-  .card {
-    width: 98%;
-  }
-}
-
 .card-picture {
-  flex: 2;
-  height: 80%;
+  height: calc(100% / 3);
   position: relative;
 }
 
 .profile-pic {
   filter: brightness(.7);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
   z-index: 0;
+}
+
+.profile-pic:hover {
+  filter: brightness(1);
+}
+
+.tall-person {
+  object-position: top;
 }
 
 .arrow-icon {
   left: 3%;
   position: absolute;
-  top: 5%;
-  width: 20%;
+  top: 8%;
+  width: 17%;
 }
 
 .views {
@@ -189,48 +151,97 @@ section {
 
 .card-info {
   display: flex;
-  flex: 3;
+  height: calc(200% / 3);
   flex-direction: column;
   padding: 5% 5% 0 5%;
+}
+
+.info-quarter {
+  height: 25%;
+  width: 100%;
 }
 
 .card-date {
   color: #AFB0B2;
 }
 
-.small-font {
-  font-size: .8rem;
-}
-
-.info-quarter {
-  margin-bottom: 5%;
-  width: 100%;
-}
-
-.name {
-  flex: 1;
-}
-
 .url {
   background-color: #EFEFEF;
-  flex: 1;
   margin: 0 auto 5%;
   overflow-wrap: break-word;
+  padding: 1%;
   width: 98%;
 }
 
 .url p {
-  margin: 3%;
+  margin: 4% 3% 3%;
 }
 
-.playlist {
-  flex: 1;
+.url a {
+  color: #4D4D4D;
+  text-decoration: none;
 }
 
-.attachments {
-  flex: 1;
+.url:hover {
+  text-decoration: underline;
 }
 
 .attachment-count {
   color: #27B5FF;
+}
+
+@media (max-width: 1440px) and (orientation: portrait) {
+  .nav-left {
+    flex: 1;
+    font-size: 1.25rem;
+    margin-left: 2%;
+    padding-top: 5%;
+  }
+  nav a {
+    display: block;
+    margin: 0;
+  }
+  .small-font {
+    font-size: 1.1rem;
+  }
+  section {
+    justify-content: center;
+  }
+  .card {
+    font-size: 1.5rem;
+    width: 98%;
+  }
+  .big-font {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1080px) and (orientation: landscape) {
+  .nav-left {
+    flex: 3;
+  }
+  nav a {
+    margin: 1%;
+  }
+  section {
+    justify-content: left;
+  }
+  .card {
+    margin: 0 .5% 1.5% .5%;
+    width: calc(97% / 3);
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .nav-left {
+    flex: 2;
+    padding: 3%;
+  }
+  nav a {
+    display: block;
+    margin: 1%;
+  }
+  .card {
+    width: 49%;
+  }
 }
