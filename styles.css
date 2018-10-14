@@ -78,6 +78,10 @@ nav a {
   width: 60%;
 }
 
+.logo:hover {
+  width: 65%;
+}
+
 /*MAIN*/
 main {
   background-color: #EFEFEF;
