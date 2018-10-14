@@ -157,7 +157,7 @@ section {
   display: flex;
   height: 60%;
   flex-direction: column;
-  padding: 5% 5% 0 5%;
+  padding: 5%;
 }
 
 .info-quarter {
@@ -188,6 +188,10 @@ section {
 
 .url:hover {
   text-decoration: underline;
+}
+
+.attachments {
+  /*margin-bottom: 3%;*/
 }
 
 .attachment-count {
