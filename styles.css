@@ -12,7 +12,7 @@ header {
 
 /*NAV LEFT*/
 .nav-left {
-  flex: 4;
+  flex: 5;
   margin-right: auto;
   padding-top: 5%;
 }
@@ -39,7 +39,6 @@ nav a {
 .nav-right {
   flex: 1;
   margin-top: .5%;
-  /*margin-right: 2%;*/
   text-align: center;
 }
 
@@ -74,7 +73,7 @@ nav a {
 
 .logo {
   filter: invert(1);
-  width: 60%;
+  width: 70%;
 }
 
 /*MAIN*/
@@ -157,8 +156,8 @@ section {
 
 .card-info {
   display: flex;
-  height: 60%;
   flex-direction: column;
+  height: 60%;
   padding: 5%;
 }
 
@@ -199,20 +198,20 @@ section {
 /*MEDIA QUERIES*/
 @media (max-width: 1440px) and (orientation: portrait) {
   .nav-left {
+    display: flex;
     flex: 2;
+    flex-direction: column;
+    justify-content: center;
     /*font-size: 1.25rem;*/
     margin-left: 2%;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .nav-left a {
+    border: 2px solid #999999;
     box-sizing: content-box;
     display: block;
-    margin: 4px;
     font-size: 0px;
-    border: 2px solid #FFFFFF;
+    margin: 4px;
     width: 40px;
   }
   .nav-right {
@@ -238,7 +237,7 @@ section {
 
 @media (max-width: 1080px) and (orientation: landscape) {
   .nav-left {
-    flex: 3;
+    flex: 4;
   }
   section {
     justify-content: left;
@@ -258,27 +257,27 @@ section {
 
 @media (max-width: 768px) and (orientation: landscape) {
   .nav-left {
+    display: flex;
     flex: 2;
+    flex-direction: column;
+    justify-content: center;
     /*font-size: 1.25rem;*/
     margin-left: 2%;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .nav-left a {
+    border: 2px solid #999999;
     box-sizing: content-box;
     display: block;
-    margin: 4px;
     font-size: 0px;
-    border: 2px solid #FFFFFF;
+    margin: 4px;
     width: 40px;
   }
   .nav-right {
     margin-right: 3%;
   }
   .logo {
-    width: 100%;
+    width: 90%;
   }
   .card {
     width: 49%;
@@ -287,27 +286,27 @@ section {
 
 @media (max-width: 480px) and (orientation: landscape) {
   .nav-left {
+    display: flex;
     flex: 2;
+    flex-direction: column;
+    justify-content: center;
     /*font-size: 1.25rem;*/
     margin-left: 2%;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .nav-left a {
+    border: 2px solid #999999;
     box-sizing: content-box;
     display: block;
-    margin: 4px;
     font-size: 0px;
-    border: 2px solid #FFFFFF;
+    margin: 4px;
     width: 40px;
   }
   .nav-right {
     margin-right: 3%;
   }
   .logo {
-    width: 100%;
+    width: 90%;
   }
   /*.small-font {
     font-size: 1.1rem;
